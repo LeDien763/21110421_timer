@@ -47,7 +47,7 @@ function FlexBox(this: any): React.JSX.Element {
       }
     return (
         <View key={index} style={[styles.lap]}>
-          <Text style={{ ...styles.lapText, color: lapTextColor }}>{`Lap #${reversedLaps.length - index}`}</Text>
+          <Text style={{ ...styles.lapText, color: lapTextColor }}>{`Lap ${reversedLaps.length - index}`}</Text>
           <Text style={{ ...styles.lapText, color: lapTextColor }}>{formatTime(time)}</Text>
         </View>
       );
@@ -178,7 +178,7 @@ const styles = StyleSheet.create({
   lapText:{
     fontSize:25,
     color:'white',
-    fontWeight:'100',
+    fontWeight:'200',
   },
   startButton:{
     borderColor: 'green',
